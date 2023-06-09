@@ -14,12 +14,11 @@
 
 .header-auth {
     display: flex;
-    align-items: center;
+   align-items: center;
 }
 
 .header-auth__list {
     display: flex;
-    align-items: center;
 }
 
 .header-auth__text {
@@ -34,9 +33,10 @@
     }
 }
 
-.item:before {
+.header-auth__item:not(:last-child)::after {
     content: '';
     display: block;
+    margin-left: 8px;
     width: 1px;
     height: 18px;
     background-color: var(--secondary-text-color);
@@ -45,7 +45,10 @@
         height: 16px;
     }
 }
-
+.header-auth__item{
+    display: flex;
+    margin-left: 8px;
+}
 .header-bottom {
     background-color: red;
 }
