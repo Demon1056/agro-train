@@ -1,12 +1,29 @@
 .nav {
     display: none;
-
-    @media screen and (min-width:768px) {
-        display: block;
+@media screen and (min-width:768px) {
+        display: block; 
     }
 }
-
-.nav__text {
-    font-weight: 300;
-    color: var(--secondary-text-color);
+.nav__list{
+    display: flex;
+    flex-wrap: wrap;
+    
 }
+.nav__item{
+&:not(:last-child) {
+margin-right: 10px;
+   
+}}
+.nav__link{
+    &:first-child
+{
+    display: flex;
+ align-items: center;
+}}
+.nav__text {
+font-weight: 300;
+color: var(--secondary-text-color);
+ font-size: 16px;
+line-height: 1.25;
+
+    }

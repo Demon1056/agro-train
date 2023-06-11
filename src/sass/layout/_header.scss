@@ -11,14 +11,21 @@
         padding-bottom: 15px;
     }
 }
-
+.header-top__content{
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}}
 .header-auth {
     display: flex;
    align-items: center;
+   
 }
 
 .header-auth__list {
     display: flex;
+    margin-left: 8px;
 }
 
 .header-auth__text {
@@ -27,7 +34,7 @@
     line-height: 1.22;
     color: var(--secondary-text-color);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         font-size: 16px;
         line-height: 1.25;
     }
@@ -41,13 +48,15 @@
     height: 18px;
     background-color: var(--secondary-text-color);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         height: 16px;
     }
 }
 .header-auth__item{
     display: flex;
+    &:not(:first-child){
     margin-left: 8px;
+    }
 }
 .header-bottom {
     background-color: red;
