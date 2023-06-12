@@ -1,0 +1,33 @@
+.border-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+    width: 41px;
+    height: 41px;
+}
+
+.circle-icon {
+    fill: var(--accent-color);
+}
+
+.circle-icon__counter{
+    width: 14px;
+    height: 14px;
+    background-color: var(--secondary-page-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.circle-icon__text{
+font-size: 10px;
+line-height: 1.2;
+color: var(--secondary-text-color);
+}

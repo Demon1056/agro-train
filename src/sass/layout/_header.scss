@@ -71,8 +71,24 @@
 .header-bottom {
     padding-top: 20px;
     display: flex;
+    justify-content: space-between;
 }
-
-.header-bottom__icons {
+.header-bottom__review{
     display: flex;
 }
+.circle-icons-list {
+    display: flex;
+}
+
+.circle-icons-item:not(:last-child){
+margin-right: 12px;
+}
+
+.header-price{
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 7px;
+    display: flex;
+    align-items: center;
+}
+
