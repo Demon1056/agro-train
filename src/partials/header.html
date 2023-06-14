@@ -48,23 +48,31 @@
     </div>
 </div>
 <div class="header-bottom container">
-    <svg width="106" height="48">
-        <use href="./images/icons/icons.svg#icon-logo"></use>
-    </svg>
-    <input class="search-input" type="text" name="search" placeholder="Пошук">
+    <a href="" class="logo__link"><svg width="106" height="48">
+            <use href="./images/icons/icons.svg#icon-logo"></use>
+        </svg></a>
+    <form name="search" class="search">
+        <input class="search__input" type="text" name="search" placeholder="Пошук">
+        <button type="submit" class="search__button"><svg width="15" height="15" class="top-header__icon search__icon">
+                <use href="./images/icons/icons.svg#icon-loupe"></use>
+            </svg></button>
+    </form>
+    <div class="phone-call"><a href="" class="circle-icon-link"><svg width="16" height="16" class="circle-icon">
+                <use href="./images/icons/icons.svg#icon-call"></use>
+            </svg></a></div>
     <div class="header-bottom__review">
         <ul class="circle-icons-list">
-            <li class="circle-icons-item circle-icons-item--hiden"><a href="" class="border-icon"><svg width="16"
+            <li class="circle-icons-item circle-icons-item--hiden"><a href="" class="circle-icon-link"><svg width="16"
                         height="16" class="circle-icon">
                         <use href="./images/icons/icons.svg#icon-heart"></use>
                     </svg></a></li>
-            <li class="circle-icons-item"><a href="" class="border-icon"><svg width="16" height="16"
+            <li class="circle-icons-item"><a href="" class="circle-icon-link"><svg width="16" height="16"
                         class="circle-icon">
                         <use href="./images/icons/icons.svg#icon-shopping-cart"></use>
                     </svg>
                     <div class="circle-icon__counter"><span class="circle-icon__text">1</span></div>
                 </a></li>
-            <li class="circle-icons-item"><a href="" class="border-icon"><svg width="16" height="16"
+            <li class="circle-icons-item"><a href="" class="circle-icon-link"><svg width="16" height="16"
                         class="circle-icon">
                         <use href="./images/icons/icons.svg#icon-comparison"></use>
                     </svg>
