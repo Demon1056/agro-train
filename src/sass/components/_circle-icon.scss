@@ -13,6 +13,14 @@
     &:focus {
         background-color: var(--accent-color);
     }
+
+    .phone-call>& {
+        @media screen and (min-width:1200px) {
+            margin-right: 6px;
+        }
+
+    }
+
 }
 
 .circle-icon {

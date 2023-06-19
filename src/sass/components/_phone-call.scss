@@ -1,6 +1,28 @@
-// .phone-call {
-//     background-color: red;
-// }
+.phone-call {
+    @media screen and (max-width:767.5px) {
+        display: none;
+    }
+
+    display: flex;
+    align-items: center;
+}
+
+.phone-call__information {
+    @media screen and (max-width:1200px) {
+        display: none;
+        ;
+    }
+}
+
+.phone-call__number {
+    display: flex;
+    align-items: baseline;
+}
+
 .phone-call__text {
-    color: var(--accent-color);
+    color: var(--price-text-color);
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
 }
