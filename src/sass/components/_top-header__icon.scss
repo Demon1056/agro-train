@@ -1,5 +1,12 @@
 .top-header__icon {
-    fill: var(--secondary-page-color);
+    fill: var(--main-icon-color);
+    transition: fill 200ms 200ms;
+
+    .button--page-nav:hover &,
+    .button--page-nav:focus & {
+        fill: var(--secondary-icon-color);
+    }
+
 }
 
 .top-header__icon-menu {
@@ -13,6 +20,14 @@
 
 .top-header__icon-arrow {
     margin-left: 3px;
+
+    .button>& {
+        margin-left: 0px;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
 }
 
 .top-header__icon-button {
@@ -20,4 +35,9 @@
     height: 20px;
     margin-right: 6px;
 
+    @media screen and (min-width: 768px) {
+        width: 24px;
+        height: 24px;
+        margin-right: 14px;
+    }
 }
