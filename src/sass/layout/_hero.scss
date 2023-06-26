@@ -2,7 +2,6 @@
     width: 100%;
     position: relative;
 
-
     @media screen and (min-width:768px) {
         height: 48.6vw;
     }
@@ -21,35 +20,46 @@
             url(/src/images/hero-bg/mobile-bg.jpg);
         background-repeat: no-repeat;
 
-
-
-        @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) {
             background-image: linear-gradient(255.06deg, #FCFDFA 8.87%, rgba(255, 255, 255, 0) 85.66%),
                 linear-gradient(181.56deg, #FEFDF4 1.32%, rgba(255, 255, 255, 0) 62.39%),
                 url(/src/images/hero-bg/bg.jpg);
         }
     }
-
-
 }
 
 .hero {
     position: relative;
     z-index: 1;
 
-
     @media screen and (min-width:768px) {
-        height: 100%;
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
 }
 
+.hero__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 32.5%;
+    height: 29.25vw;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    background-image: url(../images/hero-content/desktop/hero-content-d.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
 
+    @media screen and (max-width:767.5px) {
+        display: none;
+    }
 
-.hero__text-block {
-    display: flex;
-    margin-bottom: 22px;
+    @media screen and (min-width:1200px) {
+        width: 40%;
+        height: 36vw;
+    }
 }
 
 .hero__content {
@@ -57,15 +67,18 @@
     padding-bottom: 40px;
 
     @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 54.5%;
         flex-grow: 1;
-        display: flex;
-        align-items: center;
     }
-
 }
 
-
+.hero__text-block {
+    display: flex;
+    margin-bottom: 22px;
+}
 
 .hero__title {
     margin-bottom: 6px;
@@ -76,8 +89,8 @@
     }
 
     @media screen and (min-width:1200px) {
-        font-size: 55;
         margin-bottom: 18px;
+        font-size: 55;
     }
 }
 
@@ -95,7 +108,7 @@
 
 .hero__img-mobile {
     width: 100%;
-
+    height: calc(87vw - 30px);
     border-top-left-radius: 40%;
     border-bottom-right-radius: 40%;
     margin-bottom: 30px;
@@ -103,12 +116,12 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    @media screen and (max-width:480px) {
-        height: calc(81vw - 30px);
+    @media screen and (min-width:321px) {
+        height: calc(84vw - 30px);
     }
 
-    @media screen and (min-width:481px) {
-        height: 359px;
+    @media screen and (min-width:421px) {
+        height: 323px;
     }
 
     @media screen and (min-width:768px) {
@@ -116,25 +129,3 @@
     }
 }
 
-.hero__img {
-    width: 32.5%;
-    height: 29.25vw;
-    border-top-left-radius: 40%;
-    border-bottom-right-radius: 40%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/hero-content/desktop/hero-content-d.jpg);
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    bottom: 0;
-
-    @media screen and (max-width:767.5px) {
-        display: none;
-    }
-
-    @media screen and (min-width:1200px) {
-        width: 40%;
-        height: 36vw;
-    }
-}

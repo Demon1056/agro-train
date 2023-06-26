@@ -25,6 +25,34 @@
     }
 }
 
+.button--page-nav {
+    border: 1px solid var(--main-page-color);
+    background-color: var(--page-nav-button-color);
+    color: var(--main-text-color);
+    transition: border 200ms 200ms, background-color 200ms 200ms;
+
+    @media screen and (max-width: 767.5px) {
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 200px;
+        height: 40px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--main-button-color);
+        border: 0px solid var(--page-nav-button-color);
+    }
+}
+
+.button--hero{ 
+    @media screen and (min-width: 768px) {
+        position: relative;
+        left: 44px;
+}
+   }
 .button-content {
     display: flex;
     align-items: center;
@@ -44,26 +72,3 @@
 
 }
 
-.button--page-nav {
-    border: 1px solid var(--main-page-color);
-    background-color: var(--page-nav-button-color);
-    color: var(--main-text-color);
-    transition: border 200ms 200ms, background-color 200ms 200ms;
-
-    @media screen and (max-width: 767.5px) {
-        justify-content: space-between;
-    }
-
-    @media screen and (min-width: 768px) {
-        min-width: 200px;
-        height: 40px;
-    }
-
-    &:hover,
-    &:focus {
-        background-color: var(--main-button-color);
-        border: 0px solid var(--page-nav-button-color);
-    }
-
-
-}
