@@ -47,15 +47,22 @@
     }
 }
 
-.button--hero{ 
+.button--hero {
     @media screen and (min-width: 768px) {
         position: relative;
         left: 44px;
+    }
 }
-   }
+
 .button-content {
     display: flex;
     align-items: center;
+}
+
+.button--about {
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        margin: 0 auto;
+    }
 }
 
 .button__text {
@@ -71,4 +78,3 @@
     }
 
 }
-

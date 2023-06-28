@@ -1,7 +1,19 @@
 .leaf {
+    fill: var(--main-icon-color);
+
+    @media screen and (min-width:768px) {
+        width: 32px;
+        height: 25px;
+    }
+}
+
+.leaf--right {
+    transform: scaleX(-1);
+}
+
+.leaf--hero {
     position: relative;
     top: 28px;
     flex-shrink: 0;
     margin-right: 12px;
-    fill: var(--main-icon-color);
 }

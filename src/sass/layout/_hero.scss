@@ -161,7 +161,7 @@
 .hero__img-mobile {
     position: relative;
     width: 100%;
-    height: calc(87vw - 30px);
+    height: 87vw;
     border-top-left-radius: 40%;
     border-bottom-right-radius: 40%;
     margin-bottom: 30px;
@@ -183,7 +183,7 @@
     }
 
     @media screen and (min-width:321px) {
-        height: calc(84vw - 30px);
+        height: 87vw;
     }
 
     @media screen and (min-width:421px) {
