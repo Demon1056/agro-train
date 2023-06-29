@@ -1,3 +1,30 @@
 // .novetly {
 //     background-color: red;
 // }
+.products-area {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.product-list {
+    column-gap: 20px;
+    display: flex;
+    overflow: auto;
+
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin: 0 20px;
+    }
+}
+
+.s {
+    flex-shrink: 0;
+
+    @media screen and (max-width:767.5px) {
+        display: none;
+    }
+}
