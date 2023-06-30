@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 41px;
-    height: 41px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     transition: background-color 200ms 200ms;
 
@@ -27,9 +27,26 @@
 }
 
 .circle-icon-link--shadow {
+    width: 47px;
+    height: 47px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
+.circle-icon-link--arrow {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    border: 1px solid var(--main-icon-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--main-icon-color);
+    }
+
+    @media screen and (max-width:767.5px) {
+        display: none;
+    }
+}
 
 
 .circle-icon {
@@ -40,6 +57,19 @@
     .circle-icon-link:focus & {
         fill: #FFFFFF;
         background-color: var(--accent-color);
+    }
+}
+
+.circle-icon--arrow {
+    fill: var(--main-icon-color);
+    transition: fill 200ms 200ms, background-color 200ms 200ms;
+
+
+
+    .circle-icon-link:hover &,
+    .circle-icon-link:focus & {
+        fill: #FFFFFF;
+        background-color: var(--main-icon-color);
     }
 }
 
