@@ -29,6 +29,7 @@
     border: 1px solid var(--main-page-color);
     background-color: var(--page-nav-button-color);
     color: var(--main-text-color);
+    text-transform: uppercase;
     transition: border 200ms 200ms, background-color 200ms 200ms;
 
     @media screen and (max-width: 767.5px) {
@@ -65,11 +66,16 @@
     }
 }
 
+.button--center {
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+    }
+}
+
 .button__text {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    text-transform: uppercase;
     transition: color 200ms 200ms;
 
     .button--page-nav:hover &,
