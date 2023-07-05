@@ -1,19 +1,26 @@
 .partners-list__item{
     display: inline-block;
-    width: calc((100% - 60px)/2);
-    margin-right: 20px;
+    width: calc((100% - (3*20px))/2);
+    padding: 10px 20px;
     border-radius: 20px;
     background-color: #FFFFFF;
-    border: solid 1px red;
-    
-  
-
+    font-size: 0;
+    &:not(:last-child){
+        margin-right: 20px;
     }
+    
+    @media screen and (min-width:768px){
+        padding: 20px 40px;
+        width: calc((100% - (4*30px))/3);
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+    @media screen and (min-width:1200px){
+        width: calc((100% - (7*30px))/6);
+    }
+}
     .partner-list__link{
         display: flex;
         justify-content: center;
-        padding: 10px 20px;
-        @media screen and (min-width:768px){
-            padding: 20px 40px;
-        }
-    }
+       }

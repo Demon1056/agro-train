@@ -48,7 +48,18 @@
     }
 }
 
+.circle-icon-link--partners{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
+.circle-icon-link--partners-left{
+    left: 25px;
+}
+.circle-icon-link--partners-right{
+    right:25px;
+}
 .circle-icon {
     fill: var(--accent-color);
     transition: fill 200ms 200ms, background-color 200ms 200ms;
