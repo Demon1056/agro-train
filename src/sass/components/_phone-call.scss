@@ -1,19 +1,23 @@
 .phone-call {
-    @media screen and (max-width:767.5px) {
-        display: none;
-    }
-
     display: flex;
     align-items: center;
+    
+    .header-bottom__content & {
+     @media screen and (max-width:767.5px) {
+         display: none;
+        }
+}
+
+   
 }
 
 .phone-call__information {
+    .header-bottom__content  &{
     @media screen and (max-width:1199px) {
-        display: none;
-        ;
+        display: none
     }
 }
-
+}
 .phone-call__number {
     display: flex;
     align-items: baseline;

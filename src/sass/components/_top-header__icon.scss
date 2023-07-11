@@ -28,6 +28,10 @@
             display: none;
         }
     }
+    .read-more>&{
+        fill: var(--secondary-icon-color);
+        margin-left: 8px;
+    }
 }
 
 .top-header__icon-button {

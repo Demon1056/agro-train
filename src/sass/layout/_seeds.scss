@@ -33,3 +33,17 @@
 .seeds__text{
     color: var(--secondary-content-text-color);
 }
+.read-more{
+    display: flex;
+   align-items:center;
+    background-color: transparent;
+    border: 0px transparent;
+    @media screen and (min-width:768px) {
+        display: none; 
+    }
+}
+.read-more__text{
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    line-height: 1.2;
+}
