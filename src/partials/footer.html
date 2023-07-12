@@ -1,14 +1,15 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__content">
-        <a href="" class="logo__link"><svg width="106" height="48">
-            <use href="./images/logo/logo.png"></use>
-        </svg></a>
+      <div class="footer__logo-area">
+      <a href="" class="logo__link">
+        <img src="./images/logo/logo.png" width="109" height="49" />
+      </a>
       <p class="footer__text">
         Пропонуємо покупцям широкий вибір насіння овочів
       </p>
-      <ul class="footer__information">
-        <li class="footer__item">
+    </div>
+        <div class="footer__item ">
           <h3 class="footer__title">Товари</h3>
           <ul class="footer-list">
             <li class="footer-list__item">
@@ -37,8 +38,8 @@
               </a>
             </li>
           </ul>
-        </li>
-        <li class="footer__item">
+        </div>
+        <div class="footer__item">
           <h3 class="footer__title">Інформація</h3>
           <ul class="footer-list">
             <li class="footer-list__item">
@@ -57,49 +58,50 @@
               </a>
             </li>
           </ul>
-        </li>
-      </ul>
-
+        </div>
+   
       <div class="contact-area">
-        <h3 class="footer__title">Контакти</h3>
-        <div class="phone-call">
-          <a href="" class="circle-icon-link circle-icon-link--border">
-            <svg width="16" height="16" class="circle-icon">
-              <use href="./images/icons/icons.svg#icon-call"></use>
-            </svg>
-          </a>
-          <div class="phone-call__information">
-            <div class="phone-call__number">
-              <p>+38 (067) 115 00 58</p>
-              <svg
-                class="top-header__icon top-header__icon-arrow"
-                width="12"
-                height="12"
-              >
-                <use href="./images/icons/icons.svg#icon-arrow-down"></use>
+        <h3 class="footer__title footer__title--biger">Контакти</h3>
+        <ul class="contacts">
+          <li class="phone-call footer-list__item">
+            <a href="" class="circle-icon-link circle-icon-link--border">
+              <svg width="16" height="16" class="circle-icon">
+                <use href="./images/icons/icons.svg#icon-call"></use>
               </svg>
-            </div>
-            <a href="" class="phone-call__link">
-              <p class="phone-call__text">Замовити зворотній зв’язок</p>
             </a>
-          </div>
-        </div>
-        <div class="phone-call">
-          <a href="" class="circle-icon-link circle-icon-link--border">
-            <svg width="16" height="16" class="circle-icon">
-              <use href="./images/icons/icons.svg#icon-email"></use>
-            </svg>
-          </a>
-          <div class="phone-call__information">
-            <div class="phone-call__number">
-              <p>DAT@gmail.com</p>
+            <div class="phone-call__information">
+              <div class="phone-call__number">
+                <p>+38 (067) 115 00 58</p>
+                <svg
+                  class="top-header__icon top-header__icon-arrow"
+                  width="12"
+                  height="12"
+                >
+                  <use href="./images/icons/icons.svg#icon-arrow-down"></use>
+                </svg>
+              </div>
+              <a href="" class="phone-call__link">
+                <p class="phone-call__text">Замовити зворотній зв’язок</p>
+              </a>
             </div>
-          </div>
-        </div>
+          </li>
+          <li class="phone-call footer-list__item">
+            <a href="" class="circle-icon-link circle-icon-link--border">
+              <svg width="16" height="16" class="circle-icon">
+                <use href="./images/icons/icons.svg#icon-email"></use>
+              </svg>
+            </a>
+            <div class="phone-call__information">
+              <div class="phone-call__number">
+                <p>DAT@gmail.com</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="strip"></div>
-    <p>&#169; 2022 DAT</p>
+    <p class="copyright">&#169; 2022 DAT</p>
     <button type="button" class="bottom-button">
       <svg width="20" height="20" class="bottom-button__icon">
         <use href="./images/icons/icons.svg#icon-arrow-top"></use>

@@ -18,6 +18,13 @@
 }
 
 .nav__item {
+    padding: 3px;
+    border: 1px solid transparent;
+    transition: border-color 200ms 200ms;
+    &:focus,
+    &:hover{
+        border-color:var(--secondary-text-color);
+    }
 
     @media screen and (max-width:1199px) {
         flex-basis: calc((100% - 2*10px) / 3);
@@ -42,11 +49,5 @@
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.25;
-    transition: transform 200ms 200ms;
-
-    .nav__link:focus &,
-    .nav__link:hover & {
-        transform: scale(1.1);
-    }
-
+    
 }
