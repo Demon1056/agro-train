@@ -3,16 +3,16 @@
     transition: fill 200ms 200ms;
 
     .button--page-nav:hover &,
-    .button--page-nav:focus & {
+    .button--page-nav:focus &,
+    &:focus,
+    &:hover {
         fill: var(--secondary-icon-color);
     }
-
 }
 
 .top-header__icon-menu {
     margin-left: auto;
-
-    @media screen and (min-width: 768px) {
+       @media screen and (min-width: 768px) {
         display: none;
     }
 
