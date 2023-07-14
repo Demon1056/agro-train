@@ -69,37 +69,7 @@
     }
 }
 
-.about__big-wing {
-    position: absolute;
-    top: 52%;
-    left: -7.7%;
 
-    @media screen and (max-width:767.5px) {
-        display: none;
-    }
-
-    @media screen and (min-width:768px) and (max-width:1199px) {
-        width: 124px;
-        height: 89px;
-    }
-}
-
-.about__small-wing {
-    position: absolute;
-    left: 13%;
-    bottom: -3.7%;
-    filter: blur(2px);
-    transform: scaleX(-1);
-
-    @media screen and (max-width:767.5px) {
-        display: none;
-    }
-
-    @media screen and (min-width:768px) and (max-width:1199px) {
-        width: 76px;
-        height: 55px;
-    }
-}
 
 .about__list {
     margin-bottom: 30px;

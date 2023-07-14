@@ -1,56 +1,83 @@
 <section class="about">
-    <div class="about container container--biger">
-        <div class="about__img">
-            <img src="./images/wing/wing.png" class="about__big-wing" alt="wing" width="246" height="178">
-            <img src="./images/wing/wing.png" class="about__small-wing" alt="wing" width="152" height="110">
-        </div>
-        <div class="about__text-area">
-            <div class="title-area">
-                <svg class="leaf" width="14" height="11">
-                    <use href="./images/icons/icons.svg#icon-leaf"></use>
-                </svg>
-                <h2 class="title">Про нас</h2>
-                <svg class="leaf leaf--right" width="14" height="11">
-                    <use href="./images/icons/icons.svg#icon-leaf"></use>
-                </svg>
-            </div>
-            <ul class="about__list">
-                <li class="about__item">
-                    <p class="about__text">Це <span class="about__text--acent">високоякісний сервіс та консультації,
-                        </span>
-                        це інноваційні технології і широкий
-                        асортимент товарів, які відповідають
-                        сучасним вимогам сільгоспвиробників. Це згуртована команда професіоналів високого класу,
-                        працюючих
-                        для зростання
-                        розвитку аграрного бізнесу в Україні.</p>
-                </li>
-                <li class="about__item">
-                    <p class="about__text">Так як ми є<span class="about__text--acent">національною компанією, </span>це
-                        дає
-                        нам певні переваги. З географічним
-                        покриттям усієї території України та
-                        кількістю продавців більш ніж 120 менеджерів та директорів ми володіємо глобальним розмахом і
-                        можемо
-                        відповідати
-                        потребам наших клієнтів.</p>
-                </li>
-                <li class="about__item">
-                    <p class="about__text">Як справжня національна компанія,<span class="about__text--acent"> керується
-                            сформованими цінностями етики бізнесу</span>
-                        та здійснює вагомий вплив на
-                        суспільство. Наша стратегія партнерства, заснованого на довірі та безумовному виконанні
-                        забов´язань,
-                        надає нам
-                        унікальний потенціал для <span class="about__text--acent">безпосереднього сприяння </span>
-                        ефективному та екологічно-раціональному розвитку
-                        сільського
-                        господарства України та етичному веденню бізнесу.</p>
-                </li>
-            </ul>
-            <button type="button" class="button button--about">
-                <p class="button__text">Докладніше</p>
-            </button>
-        </div>
+  <div class="about container container--biger">
+    <div class="about__img">
+      <img
+        srcset="
+          ./images/wing/wing-246.png 246w,
+          ./images/wing/wing-492.png 492w,
+          ./images/wing/wing-738.png 738w
+        "
+        sizes="(min-width: 1200px) 246px, (min-width: 768px) 124px"
+        src="./images/wing/wing-246.png"
+        class="about__big-wing"
+        alt="wing"
+        width="246"
+        height="178"
+      />
+      <img
+        srcset="
+          ./images/wing/wing-246.png 246w,
+          ./images/wing/wing-492.png 492w,
+          ./images/wing/wing-738.png 738w
+        "
+        sizes="(min-width: 1200px) 152px, (min-width: 768px) 76px"
+        src="./images/wing/wing-246.png"
+        class="about__small-wing"
+        alt="wing"
+        width="152"
+        height="110"
+      />
     </div>
+    <div class="about__text-area">
+      <div class="title-area">
+        <svg class="leaf" width="14" height="11">
+          <use href="./images/icons/icons.svg#icon-leaf"></use>
+        </svg>
+        <h2 class="title">Про нас</h2>
+        <svg class="leaf leaf--right" width="14" height="11">
+          <use href="./images/icons/icons.svg#icon-leaf"></use>
+        </svg>
+      </div>
+      <ul class="about__list">
+        <li class="about__item">
+          <p class="about__text">
+            Це
+            <span class="about__text--acent"
+              >високоякісний сервіс та консультації,
+            </span>
+            це інноваційні технології і широкий асортимент товарів, які
+            відповідають сучасним вимогам сільгоспвиробників. Це згуртована
+            команда професіоналів високого класу, працюючих для зростання
+            розвитку аграрного бізнесу в Україні.
+          </p>
+        </li>
+        <li class="about__item">
+          <p class="about__text">
+            Так як ми є<span class="about__text--acent"
+              >національною компанією, </span
+            >це дає нам певні переваги. З географічним покриттям усієї території
+            України та кількістю продавців більш ніж 120 менеджерів та
+            директорів ми володіємо глобальним розмахом і можемо відповідати
+            потребам наших клієнтів.
+          </p>
+        </li>
+        <li class="about__item">
+          <p class="about__text">
+            Як справжня національна компанія,<span class="about__text--acent">
+              керується сформованими цінностями етики бізнесу</span
+            >
+            та здійснює вагомий вплив на суспільство. Наша стратегія
+            партнерства, заснованого на довірі та безумовному виконанні
+            забов´язань, надає нам унікальний потенціал для
+            <span class="about__text--acent">безпосереднього сприяння </span>
+            ефективному та екологічно-раціональному розвитку сільського
+            господарства України та етичному веденню бізнесу.
+          </p>
+        </li>
+      </ul>
+      <button type="button" class="button button--about">
+        <p class="button__text">Докладніше</p>
+      </button>
+    </div>
+  </div>
 </section>
