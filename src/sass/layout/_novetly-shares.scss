@@ -1,38 +1,38 @@
 .products-area {
-    margin: 0 auto 7px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 0 auto 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    @media screen and (min-width:768px) {
-        margin: 0 auto 17px;
-    }
+  @media screen and (min-width: 768px) {
+    margin: 0 auto 17px;
+  }
 }
 
 .product-list {
-    padding: 23px;
-    column-gap: 20px;
-    display: flex;
-    overflow: auto;
+  padding: 23px;
+  column-gap: 20px;
+  display: flex;
+  overflow: auto;
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
-        margin: 0 10px;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0 10px;
+  }
 }
 
 .slider-icon {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .slider-icon--margin {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    @media screen and (min-width:768px) {
-        margin-bottom: 40px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 }
 
 .shares {
-    background-color: var(--main-page-color);
+  background-color: var(--main-page-color);
 }

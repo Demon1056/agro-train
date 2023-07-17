@@ -6,7 +6,7 @@
   padding-bottom: 20px;
 }
 .footer__content {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   margin-bottom: 41px;
   @media screen and (min-width: 768px) {
@@ -14,46 +14,42 @@
     column-gap: 47px;
   }
   @media screen and (max-width: 1199px) {
-  row-gap: 20px;
-  
-    
+    row-gap: 20px;
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
     margin-bottom: 118px;
     column-gap: 70px;
-    
   }
 }
-.footer__logo-area{
+.footer__logo-area {
   flex-basis: 100%;
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 3*60px)/4);
+    flex-basis: calc((100% - 3 * 60px) / 4);
   }
-    }
-
-  .footer-list__text{
-color: var(--main-text-color);
-@media screen and (min-width: 768px) {
-  font-size: 18px;
 }
 
-    }
-.footer__item{
+.footer-list__text {
+  color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+.footer__item {
   @media screen and (max-width: 767.5px) {
-    flex-basis: 50%;;
+    flex-basis: 50%;
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 3*60px)/4);
+    flex-basis: calc((100% - 3 * 60px) / 4);
   }
 }
 
 .footer__information {
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width:767.5px) {
+  @media screen and (max-width: 767.5px) {
     margin-bottom: 20px;
-     }
+  }
 }
 .footer__text {
   color: var(--main-content-text-color);
@@ -65,29 +61,30 @@ color: var(--main-text-color);
   margin-bottom: 17px;
 }
 
-.footer__title{
+.footer__title {
   margin-bottom: 26px;
   font-weight: 600;
   font-size: 16px;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     font-size: 18px;
-    }
+  }
 }
 
-.footer__title--biger{
+.footer__title--biger {
   font-size: 18px;
 }
 
-.footer-list__item{
-  &:not(:last-child){
-  margin-bottom: 21px;}
+.footer-list__item {
+  &:not(:last-child) {
+    margin-bottom: 21px;
+  }
 }
 
-.copyright{
+.copyright {
   text-align: center;
   color: var(--main-text-color);
   opacity: 0.5;
 }
-.contact-area{
-    flex-shrink: 0;
-  }
+.contact-area {
+  flex-shrink: 0;
+}

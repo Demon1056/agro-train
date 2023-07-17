@@ -1,5 +1,5 @@
-.slider-button-wrap {
-display: flex;
+.slider-button {
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -7,38 +7,33 @@ display: flex;
   height: 70px;
   border-radius: 50%;
   flex-shrink: 0;
+  background-color: transparent;
   border: 1px solid var(--main-icon-color);
-transition: background-color 200ms 200ms;
- 
- &:hover,
-    &:focus {
-      background-color: var(--main-icon-color);
-    }
-  
-    @media screen and (max-width: 767.5px) {
-      display: none;
-    }
+  transition: background-color 200ms 200ms;
+
+  &:hover,
+  &:focus {
+    background-color: var(--main-icon-color);
   }
-  
-  .circle-icon-link--partners {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+
+  @media screen and (max-width: 767.5px) {
+    display: none;
   }
-  
-  .circle-icon-link--partners-left {
-    left: 25px;
+}
+
+.slider-button--partners {
+  background-color: var(--main-icon-color);
+}
+
+.slider-button__icon {
+  fill: var(--main-icon-color);
+  transition: fill 200ms 200ms, background-color 200ms 200ms;
+  .slider-button--partners > & {
+    fill: #ffffff;
   }
-  .circle-icon-link--partners-right {
-    right: 25px;
+  .slider-button:hover &,
+  .slider-button:focus & {
+    fill: #ffffff;
+    background-color: var(--main-icon-color);
   }
-  .circle-icon--arrow {
-    fill: var(--main-icon-color);
-    transition: fill 200ms 200ms, background-color 200ms 200ms;
-  
-    .slider-button-wrap:hover &,
-    .slider-button-wrap:focus & {
-      fill: #ffffff;
-      background-color: var(--main-icon-color);
-    }
-  }
+}

@@ -1,0 +1,19 @@
+.small-arrow {
+  margin-left: 3px;
+  fill: var(--main-icon-color);
+  transition: fill 200ms 200ms;
+
+  .button > & {
+    margin-left: 0px;
+    fill: var(--secondary-icon-color);
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .read-more > & {
+    fill: var(--secondary-icon-color);
+    margin-left: 8px;
+  }
+}

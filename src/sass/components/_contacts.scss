@@ -1,0 +1,30 @@
+.contact {
+  display: flex;
+  align-items: center;
+
+  .header-bottom__content & {
+    @media screen and (max-width: 767.5px) {
+      display: none;
+    }
+  }
+}
+
+.contact__information {
+  .header-bottom__content & {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+}
+.contact__text {
+  display: flex;
+  align-items: baseline;
+}
+
+.contact__link-text {
+  color: var(--price-text-color);
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+}

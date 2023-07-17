@@ -5,11 +5,12 @@
 @import './components/container';
 @import './components/section';
 @import './components/title';
+@import './components/authorization';
 @import './components/top-header__icon';
 @import './components/navigation';
 @import './components/circle-icon';
 @import './components/search-form';
-@import './components/phone-call';
+@import './components/contacts';
 @import './components/button';
 @import './components/leaf';
 @import './components/wing';
@@ -18,7 +19,9 @@
 @import './components/bottom-button';
 @import './components/slider-button';
 @import './components/logo';
+@import './components/small-arrow';
 @import './layout/header';
+@import './layout/header-bottom';
 @import './layout/hero';
 @import './layout/about';
 @import './layout/novetly-shares';

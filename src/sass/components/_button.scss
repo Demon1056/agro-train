@@ -1,86 +1,103 @@
 .button {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 47px;
+  border-radius: 25px;
+  padding: 5px 12px;
+  background-color: var(--main-button-color);
+  border: 0px solid var(--page-nav-button-color);
+  color: var(--secondary-text-color);
+  transition: border 200ms 200ms, background-color 200ms 200ms;
+
+  @media screen and (min-width: 768px) {
     justify-content: center;
-    width: 100%;
+    width: 220px;
     height: 47px;
-    border-radius: 25px;
-    padding: 5px 12px;
-    background-color: var(--main-button-color);
-    border: 0px solid var(--page-nav-button-color);
-    color: var(--secondary-text-color);
-    transition: border 200ms 200ms, background-color 200ms 200ms;
-
-    &:hover,
-    &:focus {
-        border: 1px solid var(--main-page-color);
-        background-color: var(--page-nav-button-color);
-        color: var(--main-text-color);
-    }
-
-    @media screen and (min-width: 768px) {
-        justify-content: center;
-        width: 220px;
-        height: 47px;
-    }
+  }
 }
 
 .button--page-nav {
-    border: 1px solid var(--main-page-color);
-    background-color: var(--page-nav-button-color);
-    color: var(--main-text-color);
-    text-transform: uppercase;
-    transition: border 200ms 200ms, background-color 200ms 200ms;
+  border: 1px solid var(--main-page-color);
+  background-color: var(--page-nav-button-color);
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  transition: border 200ms 200ms, background-color 200ms 200ms;
 
-    @media screen and (max-width: 767.5px) {
-        justify-content: space-between;
-    }
+  @media screen and (max-width: 767.5px) {
+    justify-content: space-between;
+    background-color: var(--main-button-color);
+    border: 0px solid var(--page-nav-button-color);
+    color: var(--secondary-text-color);
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 200px;
-        height: 40px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    height: 40px;
+  }
 
-    &:hover,
-    &:focus {
-        background-color: var(--main-button-color);
-        border: 0px solid var(--page-nav-button-color);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--main-button-color);
+    border: 0px solid var(--page-nav-button-color);
+  }
 }
 
 .button--hero {
-    @media screen and (min-width: 768px) {
-        position: relative;
-        left: 44px;
-    }
+  @media screen and (min-width: 768px) {
+    position: relative;
+    left: 44px;
+  }
 }
 
 .button-content {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .button--about {
-    @media screen and (min-width: 768px) and (max-width:1199px) {
-        margin: 0 auto;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0 auto;
+  }
 }
 
 .button--center {
-    @media screen and (min-width: 768px) {
-        margin: 0 auto;
-    }
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+  }
+}
+.button__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  fill: var(--main-icon-color);
+  transition: fill 200ms 200ms;
+  .button--page-nav:hover &,
+  .button--page-nav:focus &,
+  &:focus,
+  &:hover {
+    fill: var(--secondary-icon-color);
+  }
+
+  @media screen and (max-width: 767.5px) {
+    fill: var(--secondary-icon-color);
+  }
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+  }
 }
 
 .button__text {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    transition: color 200ms 200ms;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  transition: color 200ms 200ms;
 
-    .button--page-nav:hover &,
-    .button--page-nav:focus & {
-        color: var(--secondary-text-color);
-    }
-
+  .button--page-nav:hover &,
+  .button--page-nav:focus & {
+    color: var(--secondary-text-color);
+  }
 }
