@@ -25,5 +25,15 @@
   </main>
   <include src="./partials/footer.html"></include>
 </body>
+<script>
+  const menuButton = document.querySelector('.menu-button');
+  const header = document.querySelector('.header-top');
+  const body = document.body;
 
+
+  menuButton.addEventListener('click', () => {
+    header.classList.toggle('is-open-menu');
+    body.classList.toggle('is-open-menu');
+  });
+</script>
 </html>

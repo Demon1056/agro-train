@@ -1,7 +1,12 @@
 body {
-    color: var(--main-text-color);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 1.22;
-    background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.22;
+  background-color: var(--main-bg-color);
+  &.is-open-menu {
+    @media screen and (max-width: 767.5px) {
+      overflow: hidden;
+    }
+  }
 }

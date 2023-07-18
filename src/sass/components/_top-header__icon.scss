@@ -2,10 +2,3 @@
   fill: var(--main-icon-color);
   transition: fill 200ms 200ms;
 }
-
-.top-header__icon-menu {
-  margin-left: auto;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
