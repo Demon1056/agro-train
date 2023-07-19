@@ -1,9 +1,13 @@
 .search {
+  position: relative;
+ .header-bottom__content &{
   @media screen and (max-width: 767.5px) {
     display: none;
   }
-
-  position: relative;
+}
+.mobile-menu &{
+  flex-grow: 2;
+}
 }
 
 .search__input {
@@ -12,6 +16,9 @@
   padding: 10px 55px 10px 19px;
   border: 1px solid #00000033;
   border-radius: 20px;
+  .mobile-menu &{
+   width: 100%;
+  }
 }
 
 .search__input::placeholder {
@@ -40,6 +47,11 @@
   .search__button:hover &,
   .search__button:focus & {
     fill: var(--accent-color);
+  }
+
+  .mobile-menu .search__button:hover &,
+  .search__button:focus & {
+    fill: var(--main-page-color);
   }
 }
 

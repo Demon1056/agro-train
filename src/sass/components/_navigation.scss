@@ -5,8 +5,14 @@
         display: block;
     }
 }
+.nav-mobile-menu{
+   padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
 
 .nav__list {
+
+.header-top__content &{
     display: flex;
     flex-wrap: wrap;
 
@@ -15,7 +21,7 @@
         width: 90%;
         gap: 10px;
     }
-}
+}}
 
 .nav__item {
     padding: 3px;
@@ -36,6 +42,12 @@
             margin-right: 20px;
         }
     }
+    .mobile-menu &{
+      display: flex;
+      justify-content: center;
+      &:not(:last-child){
+      margin-bottom: 40px;}
+    }
 }
 
 .nav__link {
@@ -50,4 +62,8 @@
     font-size: 16px;
     line-height: 1.25;
     
+    .mobile-menu &{
+        font-size: 22px;
+        line-height: 1.23;
+    }
 }
