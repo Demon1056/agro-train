@@ -6,9 +6,11 @@
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 1920px 1280px;
-     @media screen and (min-width:768px) {
+    
+    @media screen and (min-width:768px) {
         background-position: left bottom;   
     }
+  
     @media screen and (min-width:1921px) {
         background-position: center;   
     }
@@ -33,11 +35,13 @@
 .seeds__text{
     color: var(--secondary-content-text-color);
 }
+
 .read-more{
     display: flex;
-   align-items:center;
-    background-color: transparent;
+    align-items:center;
     border: 0px transparent;
+    background-color: transparent;
+    
     @media screen and (min-width:768px) {
         display: none; 
     }

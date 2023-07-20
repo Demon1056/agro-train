@@ -42,9 +42,10 @@
     display: flex;
     flex-wrap: wrap;
     @media screen and (min-width: 768px) and (max-width: 1199px) {
+      justify-content: center;
       row-gap: 25px;
       column-gap: 25px;
-      justify-content: center;
+     
     }
   }
 
