@@ -1,9 +1,9 @@
 
 .circle-icon-wrap {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -61,10 +61,10 @@
 }
 
 .circle-icon__counter {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
   top: 0;
   right: 0;
   width: 14px;
@@ -83,5 +83,5 @@
 .circle-icon__text {
   color: var(--secondary-text-color);
   font-size: 10px;
-  line-height: 1.2;
+  line-height: var(--main-text-line-height);
 }

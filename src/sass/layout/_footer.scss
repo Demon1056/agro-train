@@ -11,7 +11,7 @@
   margin-bottom: 41px;
   @media screen and (min-width: 768px) {
     margin-bottom: 81px;
-    column-gap: 47px;
+    column-gap: 38px;
   }
   @media screen and (max-width: 1199px) {
     row-gap: 20px;
@@ -75,6 +75,14 @@
 }
 
 .footer-list__item {
+   padding: 3px;
+  border: 1px solid transparent;
+  transition: border-color 200ms 200ms;
+ 
+  .footer-list &:hover,
+  .footer-list &:focus{
+    border-color: var(--main-text-color);
+  }
   &:not(:last-child) {
     margin-bottom: 21px;
   }

@@ -9,6 +9,7 @@
   background-color: var(--main-button-color);
   border: 0px solid var(--page-nav-button-color);
   color: var(--secondary-text-color);
+  cursor: pointer;
   transition: border 200ms 200ms, background-color 200ms 200ms;
 
   @media screen and (min-width: 768px) {
@@ -39,9 +40,9 @@
 
   &:hover,
   &:focus {
-    background-color: var(--main-button-color);
     border: 0px solid var(--page-nav-button-color);
-  }
+    background-color: var(--main-button-color);
+    }
 }
 
 .button--hero {

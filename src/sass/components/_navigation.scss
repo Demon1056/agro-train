@@ -57,9 +57,9 @@
 }
 
 .nav__text {
-    font-weight: 300;
     color: var(--secondary-text-color);
-    font-size: 16px;
+    font-weight: 300;
+    font-size: var(--main-text-font-size);
     line-height: 1.25;
     
     .mobile-menu &{
