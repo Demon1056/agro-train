@@ -1,0 +1,40 @@
+.shares {
+  background-color: var(--main-page-color);
+}
+.products-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 7px;
+
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto 17px;
+  }
+}
+
+.product-list {
+  display: flex;
+  column-gap: 20px;
+  padding: 23px;
+ overflow: auto;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0 10px;
+  }
+}
+
+.slider-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.slider-icon--margin {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+
